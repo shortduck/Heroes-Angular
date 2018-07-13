@@ -8,14 +8,14 @@ import {MessageService} from '../message.service';
 })
 export class MessagesComponent implements OnInit {
 
-  constructor(public messageServie : MessageService) { }
+  constructor(public messageService : MessageService) { }
 
   ngOnInit() {
   }
   
   onClicked() {
     
-    this.messageServie.clear();
+    this.messageService.clear();
     
   }
 
